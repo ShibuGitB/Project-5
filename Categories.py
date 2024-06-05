@@ -5,8 +5,12 @@ import Category1,Category2,Category3
 def app2() : 
     
     st.title("Select your Category To Watch"":grey_exclamation:") 
-    category=st.radio("Your Categories"":open_file_folder:",["Movies"":clapper:","Cricket"":cricket_bat_and_ball:","Comedy"":performing_arts:"]) 
+    category=st.radio("Your Categories"":open_file_folder:",[":point_down:","Movies"":clapper:","Cricket"":cricket_bat_and_ball:","Comedy"":performing_arts:"]) 
     
+    if category==":point_down:" : 
+        
+        st.caption("Enjoy Your Time in NetFlix by Watching our Shows!!! :heart_eyes:")
+        
     if category=="Movies"":clapper:" : 
         
         Category1.app21() 
